@@ -1,0 +1,135 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".DetailsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/topbar"
+        app:layout_constraintBottom_toTopOf="@+id/foodImgView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/foodImgView"
+        android:layout_width="285dp"
+        android:layout_height="305dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/asiana_tomato" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="VEGITARIAN FOOD"
+        android:textColor="#FF6813"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImgView" />
+
+    <TextView
+        android:id="@+id/foodNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Tomato Rice Special"
+        android:textColor="#091020"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:lineSpacingExtra="2dp"
+        android:text="Delicious Rice coated by tomato puree made imported specially from overseas. Fresh and saucy for a good lunch meal."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodNameText" />
+    <ImageView
+        android:id="@+id/minusImgView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/ic_group_400"/>
+
+    <TextView
+        android:id="@+id/foodQuantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="0"
+        android:textColor="#272670"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/minusImgView"
+        app:layout_constraintStart_toEndOf="@+id/minusImgView"
+        app:layout_constraintTop_toTopOf="@+id/minusImgView" />
+
+    <ImageView
+        android:id="@+id/plusImgView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/foodQuantityText"
+        app:layout_constraintStart_toEndOf="@+id/foodQuantityText"
+        app:layout_constraintTop_toTopOf="@+id/foodQuantityText"
+        app:srcCompat="@drawable/ic_group_401"/>
+
+    <TextView
+        android:id="@+id/priceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="RM 0"
+        android:textColor="#272670"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/plusImgView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/plusImgView" />
+
+    <ImageView
+        android:id="@+id/addCartImgView"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_group_1675"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
